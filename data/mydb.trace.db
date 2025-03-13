@@ -1,0 +1,14 @@
+2025-03-13 17:01:24.748757-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COSTUMERS" already exists; SQL statement:
+CREATE TABLE COSTUMERS (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(20)
+) [42101-232]
+2025-03-13 17:02:46.390629-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE[*]"; expected "identifier"; SQL statement:
+DROP TABLE [42001-232]
+2025-03-13 17:02:55.247790-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE [*][COSTUMERS]"; expected "identifier"; SQL statement:
+DROP TABLE [COSTUMERS] [42001-232]
