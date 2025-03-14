@@ -14,6 +14,12 @@ public class CustomerController {
     
     @Autowired
     private CustomerRepository customerRepository;
+
+    // Test frontend communication
+    @GetMapping("/hello")
+    public String frontTst(){
+        return "Hello, Frontend :)";
+    }
     
     // List customers
     @GetMapping
