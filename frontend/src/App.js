@@ -1,26 +1,19 @@
-import { useEffect, useState } from "react";
-import api from "./api/api";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Hello from './pages/Hello';
+import CustomerCRUD from './pages/CustomerCRUD';
+
 
 function App() {
-  const [msg, setMsg] = useState("loading...");
-
-  useEffect(() => {
-    api.get("/customers/hello")
-      .then(response => {
-        console.log("API response:", response.data);
-        setMsg(response.data || "Empty response");
-      })
-      .catch(error => {
-        console.error("Error to connect:", error);
-        setMsg("Error to get data");
-      });
-  }, []);
-
   return (
-    <div>
-      <h1>Front and Back connection</h1>
-      <p>API Response: {msg}</p>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/hello" element={<Hello />} />
+        <Route path="/crud" element={<CustomerCRUD />} />
+      </Routes>
+    </Router>
   );
 }
 
