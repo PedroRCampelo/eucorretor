@@ -1,5 +1,6 @@
 package com.eucorretor.controller;
 
+import org.springframework.http.ResponseEntity;
 import com.eucorretor.model.Customer;
 import com.eucorretor.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,6 +51,11 @@ public class CustomerController {
         }).orElseThrow(() -> new RuntimeException("Failed to find the id"));
     }
 
+    // Delete customer
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteCustomer(@PathVariable Long id) {
+        customerService.delete(id);
+        return ResponseEntity.noContent().build();
+    }
     
-
 }
