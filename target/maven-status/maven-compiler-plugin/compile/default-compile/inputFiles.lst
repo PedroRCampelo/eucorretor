@@ -1,4 +1,6 @@
-/Users/pedrocampelo/Documents/projects/eucorretor/src/main/java/com/eucorretor/controller/CostumerController.java
-/Users/pedrocampelo/Documents/projects/eucorretor/src/main/java/com/eucorretor/model/Costumer.java
-/Users/pedrocampelo/Documents/projects/eucorretor/src/main/java/com/eucorretor/project/ProjectApplication.java
-/Users/pedrocampelo/Documents/projects/eucorretor/src/main/java/com/eucorretor/repository/CostumerRepository.java
+/Users/pedrocampelo/Documents/projects/eucorretor/src/main/java/com/eucorretor/ProjectApplication.java
+/Users/pedrocampelo/Documents/projects/eucorretor/src/main/java/com/eucorretor/config/CorsConfig.java
+/Users/pedrocampelo/Documents/projects/eucorretor/src/main/java/com/eucorretor/controller/CustomerController.java
+/Users/pedrocampelo/Documents/projects/eucorretor/src/main/java/com/eucorretor/model/Customer.java
+/Users/pedrocampelo/Documents/projects/eucorretor/src/main/java/com/eucorretor/repository/CustomerRepository.java
+/Users/pedrocampelo/Documents/projects/eucorretor/src/main/java/com/eucorretor/service/CustomerService.java
