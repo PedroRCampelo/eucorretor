@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.3</version> <!-- Versão estável -->
+		<version>3.2.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.eucorretor</groupId>
@@ -17,6 +17,10 @@
 	<properties>
 		<java.version>17</java.version>
 		<maven.test.skip>true</maven.test.skip>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<tomcat.version>10.1.35</tomcat.version>
+		<spring-framework.version>6.1.14</spring-framework.version>
 	</properties>
 
 	<dependencies>
@@ -43,6 +47,11 @@
 			<artifactId>postgresql</artifactId>
 			<version>42.7.3</version>
 			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope> <!-- Alterado de 'test' para 'runtime' -->
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -76,7 +85,7 @@
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
-							<version>${lombok.version}</version>
+							<version>1.18.32</version>
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
